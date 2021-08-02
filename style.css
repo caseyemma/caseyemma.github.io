@@ -1,0 +1,166 @@
+:root {
+    --pink: #ebbab9;
+    --grey: #c9c5ba;
+    --green: #97b1a6;
+    --blue: #698996;
+    --teal: #79afb6;
+    border: none;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+body {
+    border: none;
+    margin: 0;
+}
+
+/* Navbar Styles */
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    } 
+
+#header-img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* #navbar {
+    background-color: var(--blue);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+} */
+    
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+nav {
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    background-image: url(https://i.postimg.cc/hjVN143r/floralbkgd.png);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 90px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+@media (max-width: 700px) {
+    #welcome-section {
+        background-image: none;
+    }
+}
+
+#welcome-section h1 {
+    color: var(--pink);
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+#welcome-section a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+hr {
+    border-top: .5px solid var(--pink);
+    margin: 40px 8rem; 
+}
+
+/* Projects */
+#projects h1 {
+    color: var(--pink);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#projectflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.project-tile {
+    border: 1px solid var(--pink);
+    background-color: var(--pink);
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.project-tile img {
+    width: 100%;
+}
+.project-tile h3 {
+    color: white;
+    text-transform: uppercase;
+}
+.project-tile a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.post-btn {
+    background-color: var(--blue);
+    color: var(--main);
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Footer Styles */
+footer {
+    background: var(--main);
+    padding: 2rem 8rem;
+}
+
+#credits {
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
