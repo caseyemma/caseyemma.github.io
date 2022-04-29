@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap" rel="stylesheet">  
+    
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img id="header-img" src="/images/caseyemmadesigns_white.png" alt="logo">
+        <nav id="nav-bar"> 
+            <ul class="nav-link">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <div id="grid-container">
+            <video id="video" width=100% muted autoplay loop>
+                <source src="/images/Waves.mp4" type="video/mp4">
+            </video>
+
+            <div id="contact">
+                <form id="form" action="https://formsubmit.co/496ed3f52f428541b0a08ddc9a2447fd" method="POST">
+                    <h2 id="title"> LET'S CHAT!</h2>
+                    <input type="text" name="firstname" id="firstname" required placeholder="First Name">
+                    <input type="text" name="lastname" id="lastname" required placeholder="Last Name">
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                    <input type="text" name="message" id="message" required placeholder="Message">
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <section id="services">
+
+        <div>
+            <h2>MY SERVICES</h2>
+        </div>
+
+        <div class="flex">
+            <div id="graphic-design">
+                <img src="/images/graphicdesign.jpg">
+                <h3>Graphic Design</h3>
+                <a href="" class="post-btn">LEARN MORE</a>
+            </div>
+
+            <div id="web-design">
+                <img src="/images/webdesign.jpg">
+                <h3>Web Design</h3>
+                <a href="" class="post-btn">LEARN MORE</a>
+            </div>
+
+            <div id="branding">
+                <img src="/images/branding.jpg">
+                <h3>Brand Development</h3>
+                <a href="" class="post-btn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

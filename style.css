@@ -31,8 +31,9 @@ body {
     } 
 
 #header-img {
-    width: 100px;
+    width: 200px;
     margin-left: 20px;
+    object-fit: contain;
 }
 
 /* #navbar {
@@ -149,6 +150,74 @@ hr {
     border-radius: 8px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* Project Links Styles */
+#links {
+    background-image: url(https://i.postimg.cc/hjVN143r/floralbkgd.png);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+@media (max-width: 700px) {
+    #links {
+        background-image: none;
+    }
+}
+
+#links h2 {
+    color: var(--pink);
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 300px;
+}
+
+#links p {
+    margin: 0 100px;
+}
+
+#linkflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+
+.link-tile {
+    display: flex;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+#links a :hover {
+    background-color: var(--pink);
 }
 
 /* Footer Styles */

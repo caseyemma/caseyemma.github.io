@@ -1,0 +1,210 @@
+:root {
+    --pink: #ebbab9;
+    --grey: #c9c5ba;
+    --green: #97b1a6;
+    --blue: #698996;
+    --teal: #79afb6;
+    border: none;
+    margin: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+#header {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: var(--blue);
+color: white;
+text-align: center;
+padding: 1rem;
+width: 100%;
+}
+
+#header-img {
+  width: 200px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.nav-link {
+display: flex;
+flex-direction: row;
+margin-right: 20px;
+}
+nav {
+padding: 1rem;
+}
+
+ul {
+list-style: none;
+color: white;
+width: 100%;
+}
+
+ul li a {
+color: white;
+text-decoration: none;
+padding: 1rem;
+}
+
+/* VIDEO GRID STYLES */
+
+#grid-container {
+ display: grid;
+ grid-template-areas: "video video video contact video"
+}
+
+#contact {
+grid-row: 1;
+grid-column: 4 / 5;
+z-index: 2;
+margin: 20px;
+}
+
+video {
+grid-row: 1;
+grid-column: 1 / 6;
+ width: 100%;
+ height: 520px;
+ object-fit: cover;
+}
+
+/* FORM STYLES */
+
+#form {
+    display: grid;
+    grid-template-areas:
+    "title"
+      "firstname"
+      "lastname"
+      "email"
+      "message"
+      "submit";
+    grid-gap: 10px;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-columns: 1fr;
+    width: 200px;
+    margin: auto;
+    padding: 80px;
+    background-color: var(--blue);
+    opacity: 80%;
+    color: white;
+  }
+
+  input{
+    color: white;
+  };
+
+  #title {
+      grid-area: title;
+      color: white;
+      letter-spacing: 2px;
+  }
+
+  #firstname {
+    grid-area: firstname;
+    border: none;
+    border-bottom: 1px solid #ebbab9;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  ::placeholder {
+      color: var(--pink);
+      letter-spacing: 2px;
+      margin: none;
+  }
+  
+  #lastname {
+    grid-area: lastname;
+    border: none;
+    border-bottom: 1px solid #ebbab9;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+  
+  #email {
+    grid-area: email;
+    border: none;
+    border-bottom: 1px solid #ebbab9;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  #message {
+    grid-area: message;
+    border: none;
+    border-bottom: 1px solid #ebbab9;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+  
+  #submit {
+    grid-area: submit;
+    background-color: #ebbab9;
+    border: none;
+    color: #333;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* Services Section */
+
+#services h2 {
+text-align: center;
+letter-spacing: 10px;
+font-weight: 700;
+padding: 2rem;
+}
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+column-gap: 10px;
+row-gap: 10px;
+}
+
+.flex div {
+align-items: center;
+text-align: center;
+border: 1px solid var(--blue); 
+background-color: var(--blue);
+border-radius: 8px;
+padding: 50px;
+color: white;
+}
+
+.flex div a {
+text-decoration: none;
+color: #333;
+font-weight: 300;
+font-size: 12px;
+letter-spacing: 2px;
+
+}
+
+.flex img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 100%;
+border: 5px solid var(--pink);
+
+}
+
+.flex h3{
+padding: 2rem;
+font-weight: 600;
+}
+
+.post-btn {
+background-color: var(--pink);
+padding: 10px;
+border-radius: 8px;
+}
