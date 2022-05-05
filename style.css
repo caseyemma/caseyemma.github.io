@@ -40,7 +40,6 @@ body {
 @media (max-width: 600px) {
     #header { 
         flex-direction: column;
-        justify-content:left;
         width: 100%;
         padding: auto;
         align-items: center;
@@ -51,6 +50,7 @@ body {
         width: 150px;
         margin-left: 0;
         margin-top: 20px;
+        margin-left: none;
     }
     .nav-link {
         margin: 0;
@@ -101,7 +101,7 @@ ul li a {
     text-align: center;
     
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     #welcome-section {
         background-image: none;
         margin-top: 20px;
@@ -186,18 +186,20 @@ hr {
 #links {
     background-image: url(https://i.postimg.cc/hjVN143r/floralbkgd.png);
     background-size: cover;
-    height: 100%;
-    margin-top: 30px;
+    /* height: 100%; */
+    margin-top: 100px;
     border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     #links {
         background-image: none;
+        height: auto;
     }
     #links p {
         margin: 0 20px;
@@ -206,7 +208,7 @@ hr {
 
 #links h2 {
     color: var(--pink);
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
     margin-top: 50px;
     letter-spacing: 5px;
